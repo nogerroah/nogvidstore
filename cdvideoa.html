@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #cdimg {
+        width: 100%;
+        display: block;
+      }
+      #cdvid {
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script>
+      function selectCdVideo(vidid) {
+        $("#cdimg").css("display","none");
+        $("#cdvid").css("display","block");
+        $("#cdvidsrc").attr("src","https://nogerroah.github.io/nogvidstore/cdj276/"+vidid+".mp4");
+      }
+    </script>
+  </head>
+  <body>
+    <img id="cdimg" src="https://nogerroah.github.io/nogvidstore/selectcd.png">
+    <video id="cdvid" controls>
+      <source id="cdvidsrc" src="" type="video/mp4"> 
+    </video>
+  </body>
+</html>
